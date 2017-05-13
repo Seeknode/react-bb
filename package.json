@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "React beyond the basics",
   "main": "index.js",
-  "license": "MIT"
-  "repository url": "jscomplete/react-bb"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }

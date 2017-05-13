@@ -2,9 +2,31 @@
   "name": "react-bb",
   "version": "1.0.0",
   "description": "React beyond the basics",
-  "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "nodemon": "nodemon lib/server.js",
+    "webpack": "webpack -wd"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
+  },
   "dependencies": {
-    "express": "^4.15.2"
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "webpack": "^2.5.1"
+  },
+  "devDependencies": {
+    "nodeman": "^1.1.2"
   }
 }

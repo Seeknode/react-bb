@@ -1,7 +1,7 @@
 const path = require('path');
 
 const config = {
-    entry: './lib/components/Index.js',
+    entry: './lib/renderers/DOM.js',
     output: {
         path: path.resolve(__dirname, 'public'),
         filename: 'bundle.js'

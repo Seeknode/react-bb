@@ -4,9 +4,11 @@
   "description": "React beyond the basics",
   "license": "MIT",
   "scripts": {
-    "nodemon": "nodemon lib/server.js",
+    "nodemon": "nodemon --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "build-node": "babel lib dist",
+    "build-react": "webpack -p --config webpack.config.prod.js"
   },
   "babel": {
     "presets": [
@@ -16,6 +18,7 @@
     ]
   },
   "dependencies": {
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
